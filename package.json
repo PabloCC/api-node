@@ -1,0 +1,19 @@
+{
+  "name": "api-node",
+  "version": "1.0.0",
+  "description": "Example of an API in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./node_modules/jasmine-xml-reporter/bin/jasmine.js --junitreport --output=reports/ --filePrefix=myTestResults"
+  },
+  "author": "PabloCC",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jasmine": "^3.3.0",
+    "jasmine-xml-reporter": "^1.2.1",
+    "mongoose": "^5.3.4"
+  }
+}
