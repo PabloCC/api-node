@@ -5,142 +5,135 @@
     <meta charset="UTF-8">
     <title>API NODE</title>
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Biryani:300,400,600');
-  
-   body {
-       font-family: 'Biryani', sans-serif;
-       background: #fcfcf7
-   }
-
-   .table-bordered {
-       border: 1px solid #aaa;
-      
-   }
-
-   .container {
-        width: 50%;
-        margin: 0 auto;       
-   }
-
-   table {
-       width: 100%;
-       border-collapse: collapse;
-       box-shadow: 1px 1px 5px #eee;
-       background: #fff;
-
-   }
-
-   tr {
-        border: 1px solid #aaa;
-   }
-
-    td {
-        text-align: center;
-        border: 1px solid #aaa;
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-   }
-
-   th {
-        border: 1px solid #aaa;
-   }
-
-   .panel {
-       padding: 0px;
-       border: 1px solid #aaa;
-       border-radius: 5px;
-       box-shadow: 1px 1px 5px #eee;
-
-   }
-
-   .swagger--panel-operation-get {
-       margin-bottom: 20px;
-   }
-
-    .swagger--panel-operation-get > .panel-heading {
-        background: #c6f3dd;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px 10px 0px;
-        border: 1px solid #64997f;
-        border-radius: 5px 5px 0px 0px;
-
-    }
-
-    .swagger--panel-operation-post {
-        margin-bottom: 20px;
-    }
-
-    .swagger--panel-operation-post > .panel-heading {
-        background: #f3ebc6;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px 10px 0px;
-        border: 1px solid #a8a26a;
-        border-radius: 5px 5px 0px 0px;
-    }
-
-
-    .panel-title {
-        margin: 0px;
-        border-radius: 5px;
-        font-weight: 400;
-        font-size: 16px;
-    }
-
-    .panel-title strong {
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #444;
-        margin-left: 10px;
-    }
-
-    .panel-body {
-        padding: 0px 10px;
-        background: #fff;
-    }
-
-    .panel-heading {
-        background: #e0f9ff;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px 10px 0px;
-        border: 1px solid #2e5b69;
-        border-radius: 5px 5px 0px 0px;
-    }
+        @import url('https://fonts.googleapis.com/css?family=Biryani:300,400,600');
     
-    .json-property-name {
-        font-weight: 600;
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 18px;
-        margin-right: 5px;
-        color: #444;
-    }
-
-    p {
-        margin: 0px;
-    }
-
+        body {
+            font-family: 'Biryani', sans-serif;
+            background: #fcfcf7
+        }
+    
+        .table-bordered {
+            border: 1px solid #aaa;
+    
+        }
+    
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 1px 1px 5px #eee;
+            background: #fff;
+    
+        }
+    
+        tr {
+            border: 1px solid #aaa;
+        }
+    
+        td {
+            text-align: center;
+            border: 1px solid #aaa;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    
+        th {
+            border: 1px solid #aaa;
+        }
+    
+        .panel {
+            padding: 0px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px #eee;
+    
+        }
+    
+        .swagger--panel-operation-get {
+            margin-bottom: 20px;
+        }
+    
+        .swagger--panel-operation-get>.panel-heading {
+            background: #c6f3dd;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px 10px 0px;
+            border: 1px solid #64997f;
+            border-radius: 5px 5px 0px 0px;
+    
+        }
+    
+        .swagger--panel-operation-post {
+            margin-bottom: 20px;
+        }
+    
+        .swagger--panel-operation-post>.panel-heading {
+            background: #f3ebc6;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px 10px 0px;
+            border: 1px solid #a8a26a;
+            border-radius: 5px 5px 0px 0px;
+        }
+    
+    
+        .panel-title {
+            margin: 0px;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    
+        .panel-title strong {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444;
+            margin-left: 10px;
+        }
+    
+        .panel-body {
+            padding: 0px 10px;
+            background: #fff;
+        }
+    
+        .panel-heading {
+            background: #e0f9ff;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px 10px 0px;
+            border: 1px solid #2e5b69;
+            border-radius: 5px 5px 0px 0px;
+        }
+    
+        .json-property-name {
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            margin-right: 5px;
+            color: #444;
+        }
+    
+        p {
+            margin: 0px;
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h1>API NODE</h1>
         <p class="sw-info">
-
             Version: <span class="sw-info-version">0.1</span>
         </p>
         <p>
             <p>API in NodeJS and Express with connection to a Azure CosmosDB.</p>
         </p>
-
-
         <div id="sw-schemes" class="sw-default-value">
             <span class="sw-default-value-header">Schemes:</span>
-
         </div>
-
         <h2 id="swagger--summary-no-tags">Summary</h2>
         <table class="table table-bordered table-condensed swagger--summary">
             <thead>
@@ -159,7 +152,6 @@
                         <a href="#operation--api-persona-get">GET</a>
                     </td>
                     <td>
-
                     </td>
                 </tr>
                 <tr>
@@ -167,17 +159,11 @@
                         <a href="#operation--api-persona-post">POST</a>
                     </td>
                     <td>
-
                     </td>
                 </tr>
             </tbody>
         </table>
-
-
-
         <h2>Paths</h2>
-
-
         <span id="path--api-persona"></span>
         <div id="operation--api-persona-get" class="swagger--panel-operation-get panel">
             <div class="panel-heading">
@@ -187,30 +173,19 @@
             <div class="panel-body">
                 <section class="sw-operation-description">
                     <p>Get all documents for Persona resource</p>
-
                 </section>
-
-
-
                 <section class="sw-responses">
-
                     <dl>
-                        <dt class="sw-response-200">
-                            200 OK
-
-                        </dt>
+                        <dt class="sw-response-200"> 200 OK</dt>
                         <dd class="sw-response-200">
                             <div class="row">
                                 <div class="col-md-12">
                                     <p>array of documents of Persona resource</p>
-
                                 </div>
                             </div>
                             <div class="row">
-
                                 <div class="col-md-6 sw-response-model">
                                 </div>
-
                             </div>
                         </dd>
                     </dl>
@@ -225,12 +200,8 @@
             <div class="panel-body">
                 <section class="sw-operation-description">
                     <p>Save new document for resource Persona</p>
-
                 </section>
-
-
                 <section class="sw-request-body">
-
                     <div class="row">
                         <div class="col-md-6">
                             <p>
@@ -246,77 +217,53 @@
                         </div>
                     </div>
                 </section>
-
                 <section class="sw-responses">
-
                     <dl>
-                        <dt class="sw-response-200">
-                            200 OK
-
-                        </dt>
+                        <dt class="sw-response-200">200 OK</dt>
                         <dd class="sw-response-200">
                             <div class="row">
                                 <div class="col-md-12">
                                     <p>Document saved</p>
-
                                 </div>
                             </div>
                             <div class="row">
-
                                 <div class="col-md-6 sw-response-model">
                                 </div>
-
                             </div>
                         </dd>
                     </dl>
                 </section>
             </div>
         </div>
-
-
-
-
         <h2>Schema definitions</h2>
-
-
         <div id="definition-Persona" class="panel panel-definition">
             <div class="panel-heading">
                 <h3 class="panel-title"><a name="/definitions/Persona"></a>Persona:
                     <span class="json-property-type">
                         <span class="json-property-type">object</span>
                         <span class="json-property-range" title="Value limits"></span>
-
                     </span>
                 </h3>
             </div>
             <div class="panel-body">
-
                 <section class="json-schema-properties">
                     <dl>
                         <dt data-property-name="name">
                             <span class="json-property-name">name:</span>
-
                             <span class="json-property-type">string</span>
                             <span class="json-property-range" title="Value limits"></span>
-
                         </dt>
                         <dd>
-
                             <div class="json-inner-schema">
-
                             </div>
                         </dd>
                         <dt data-property-name="description">
                             <span class="json-property-name">description:</span>
-
                             <span class="json-property-type">string</span>
                             <span class="json-property-range" title="Value limits"></span>
-
                         </dt>
                         <dd>
-
                             <div class="json-inner-schema">
-
                             </div>
                         </dd>
                     </dl>
@@ -324,7 +271,6 @@
             </div>
         </div>
     </div>
-    <script src="bundle.js" type="application/javascript"></script>
 </body>
 
 </html>
