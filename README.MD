@@ -32,7 +32,7 @@ It is not recommended to save the keys of this file in public repositories. This
 
 ### Start 
 
-    > npm start
+    > docker-compose up
 
 ### Test
 
@@ -46,4 +46,4 @@ Run `docker build -t api-node .` for build the Docker Image.
 
 ### Run Docker Image 
 
-Run `docker run -d -p 3000:3000 api-node`. Navigate to `http://localhost:3000` to see the app running.
+Run `docker run -d -p 4000:4000 api-node`. Navigate to `http://localhost:4000` to see the app running.
